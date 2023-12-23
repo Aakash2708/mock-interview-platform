@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -7,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 
-const MONGODB_URI = process.env.DATABASE || 'mongodb+srv://tyagiaakashmypc345:TZTaP0ZX3ceXGEL9@cluster0.3emlqz1.mongodb.net/'
+const MONGODB_URI = process.env.DB 
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
